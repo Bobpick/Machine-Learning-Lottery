@@ -14,7 +14,7 @@ def calculate_arithmetic_complexity(numbers):
             unique_diffs.add(abs(numbers[i] - numbers[j]))
     return len(unique_diffs) - (len(numbers) - 1)
 
-# Repeat the entire process 5 times
+# Repeat the entire process 10 times
 for _ in range(10):
     # Load the dataset, skipping rows containing field names
     df = pd.read_csv("C:/Users/Bob/Documents/Thunt/Thunt100.csv", header=None, skiprows=1)
